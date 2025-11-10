@@ -6,10 +6,10 @@
       "use": "@vercel/node"
     },
     {
-      "src": "elevatemy-path-main/package.json",
+      "src": "vite.config.*",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "elevatemy-path-main/dist"
+        "distDir": "dist"
       }
     }
   ],
@@ -20,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/elevatemy-path-main/$1"
+      "dest": "/index.html"
     }
   ]
 }
